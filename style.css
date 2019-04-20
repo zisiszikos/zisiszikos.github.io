@@ -39,11 +39,40 @@ body {
     background-repeat: no-repeat;
 }
 
-.no-webp body {
-    background-image: url('images/back.jpg');
+@media (max-width: 812px) and (orientation: landscape) {
+    .no-webp body {
+        background-image: url('images/back_landscape.jpg');
+    }
+    .webp body {
+        background-image: url('images/back_landscape.webp');
+    }
 }
-.webp body {
-    background-image: url('images/back.webp');
+
+@media (min-width: 813px) and (orientation: landscape) {
+    .no-webp body {
+        background-image: url('images/back.jpg');
+    }
+    .webp body {
+        background-image: url('images/back.webp');
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    .no-webp body {
+        background-image: url('images/back_portrait.jpg');
+    }
+    .webp body {
+        background-image: url('images/back_portrait.webp');
+    }
+}
+
+@media (min-width: 481px) and (orientation: portrait) {
+    .no-webp body {
+        background-image: url('images/back.jpg');
+    }
+    .webp body {
+        background-image: url('images/back.webp');
+    }
 }
 
 h1,
@@ -98,10 +127,10 @@ h5 {
 }
 
 .no-webp .avatar {
-    background-image: url('images/zisis_zikos.jpg');
+    background-image: url('images/zisis_zikos_300.jpg');
 }
 .webp .avatar {
-    background-image: url('images/zisis_zikos.webp');
+    background-image: url('images/zisis_zikos_300.webp');
 }
 
 .personal-details {
