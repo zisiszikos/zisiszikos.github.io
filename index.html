@@ -1,113 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preload" fetchpriority="high" as="image" href="/images/zisis_zikos_300.webp" type="image/webp" />
+        <link rel="preload" href="/webfonts/Catamaran/Catamaran-ExtraBold.ttf" as="font" type="font/ttf" crossorigin />
+        <link rel="preload" href="/webfonts/Catamaran/Catamaran-Light.ttf" as="font" type="font/ttf" crossorigin />
+        <link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-T3NJH24');
+        </script>
+        <!-- End Google Tag Manager -->
+        <script>
+            /*! modernizr 3.6.0 (Custom Build) | MIT *
+             * https://modernizr.com/download/?-webp-setclasses !*/
+            !(function (e, n, A) {
+                function o(e, n) {
+                    return typeof e === n;
+                }
+                function t() {
+                    var e, n, A, t, a, i, l;
+                    for (var f in r)
+                        if (r.hasOwnProperty(f)) {
+                            if (
+                                ((e = []),
+                                (n = r[f]),
+                                n.name &&
+                                    (e.push(n.name.toLowerCase()),
+                                    n.options && n.options.aliases && n.options.aliases.length))
+                            )
+                                for (A = 0; A < n.options.aliases.length; A++)
+                                    e.push(n.options.aliases[A].toLowerCase());
+                            for (t = o(n.fn, 'function') ? n.fn() : n.fn, a = 0; a < e.length; a++)
+                                (i = e[a]),
+                                    (l = i.split('.')),
+                                    1 === l.length
+                                        ? (Modernizr[l[0]] = t)
+                                        : (!Modernizr[l[0]] ||
+                                              Modernizr[l[0]] instanceof Boolean ||
+                                              (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])),
+                                          (Modernizr[l[0]][l[1]] = t)),
+                                    s.push((t ? '' : 'no-') + l.join('-'));
+                        }
+                }
+                function a(e) {
+                    var n = u.className,
+                        A = Modernizr._config.classPrefix || '';
+                    if ((c && (n = n.baseVal), Modernizr._config.enableJSClass)) {
+                        var o = new RegExp('(^|\\s)' + A + 'no-js(\\s|$)');
+                        n = n.replace(o, '$1' + A + 'js$2');
+                    }
+                    Modernizr._config.enableClasses &&
+                        ((n += ' ' + A + e.join(' ' + A)), c ? (u.className.baseVal = n) : (u.className = n));
+                }
+                function i(e, n) {
+                    if ('object' == typeof e) for (var A in e) f(e, A) && i(A, e[A]);
+                    else {
+                        e = e.toLowerCase();
+                        var o = e.split('.'),
+                            t = Modernizr[o[0]];
+                        if ((2 == o.length && (t = t[o[1]]), 'undefined' != typeof t)) return Modernizr;
+                        (n = 'function' == typeof n ? n() : n),
+                            1 == o.length
+                                ? (Modernizr[o[0]] = n)
+                                : (!Modernizr[o[0]] ||
+                                      Modernizr[o[0]] instanceof Boolean ||
+                                      (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])),
+                                  (Modernizr[o[0]][o[1]] = n)),
+                            a([(n && 0 != n ? '' : 'no-') + o.join('-')]),
+                            Modernizr._trigger(e, n);
+                    }
+                    return Modernizr;
+                }
+                var s = [],
+                    r = [],
+                    l = {
+                        _version: '3.6.0',
+                        _config: { classPrefix: '', enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
+                        _q: [],
+                        on: function (e, n) {
+                            var A = this;
+                            setTimeout(function () {
+                                n(A[e]);
+                            }, 0);
+                        },
+                        addTest: function (e, n, A) {
+                            r.push({ name: e, fn: n, options: A });
+                        },
+                        addAsyncTest: function (e) {
+                            r.push({ name: null, fn: e });
+                        },
+                    },
+                    Modernizr = function () {};
+                (Modernizr.prototype = l), (Modernizr = new Modernizr());
+                var f,
+                    u = n.documentElement,
+                    c = 'svg' === u.nodeName.toLowerCase();
+                !(function () {
+                    var e = {}.hasOwnProperty;
+                    f =
+                        o(e, 'undefined') || o(e.call, 'undefined')
+                            ? function (e, n) {
+                                  return n in e && o(e.constructor.prototype[n], 'undefined');
+                              }
+                            : function (n, A) {
+                                  return e.call(n, A);
+                              };
+                })(),
+                    (l._l = {}),
+                    (l.on = function (e, n) {
+                        this._l[e] || (this._l[e] = []),
+                            this._l[e].push(n),
+                            Modernizr.hasOwnProperty(e) &&
+                                setTimeout(function () {
+                                    Modernizr._trigger(e, Modernizr[e]);
+                                }, 0);
+                    }),
+                    (l._trigger = function (e, n) {
+                        if (this._l[e]) {
+                            var A = this._l[e];
+                            setTimeout(function () {
+                                var e, o;
+                                for (e = 0; e < A.length; e++) (o = A[e])(n);
+                            }, 0),
+                                delete this._l[e];
+                        }
+                    }),
+                    Modernizr._q.push(function () {
+                        l.addTest = i;
+                    }),
+                    Modernizr.addAsyncTest(function () {
+                        function e(e, n, A) {
+                            function o(n) {
+                                var o = n && 'load' === n.type ? 1 == t.width : !1,
+                                    a = 'webp' === e;
+                                i(e, a && o ? new Boolean(o) : o), A && A(n);
+                            }
+                            var t = new Image();
+                            (t.onerror = o), (t.onload = o), (t.src = n);
+                        }
+                        var n = [
+                                {
+                                    uri: 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=',
+                                    name: 'webp',
+                                },
+                                {
+                                    uri: 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==',
+                                    name: 'webp.alpha',
+                                },
+                                {
+                                    uri: 'data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA',
+                                    name: 'webp.animation',
+                                },
+                                {
+                                    uri: 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=',
+                                    name: 'webp.lossless',
+                                },
+                            ],
+                            A = n.shift();
+                        e(A.name, A.uri, function (A) {
+                            if (A && 'load' === A.type) for (var o = 0; o < n.length; o++) e(n[o].name, n[o].uri);
+                        });
+                    }),
+                    t(),
+                    a(s),
+                    delete l.addTest,
+                    delete l.addAsyncTest;
+                for (var p = 0; p < Modernizr._q.length; p++) Modernizr._q[p]();
+                e.Modernizr = Modernizr;
+            })(window, document);
+        </script>
+        <title>Zisis Zikos - Front-end Software Engineer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering."
+        />
+        <meta name="keywords" content="Zisis Zikos, Front-end Software Engineer" />
 
-<head>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preload" fetchpriority="high" as="image" href="/images/zisis_zikos_300.webp" type="image/webp">
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-T3NJH24');
-    </script>
-    <!-- End Google Tag Manager -->
-    <script>
-        /*! modernizr 3.6.0 (Custom Build) | MIT *
-        * https://modernizr.com/download/?-webp-setclasses !*/
-        !function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
-    </script>
-    <title>Zisis Zikos - Front-end Software Engineer</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering.">
-    <meta name="keywords" content="Zisis Zikos, Front-end Software Engineer">
+        <meta itemprop="name" content="Zisis Zikos - Front-end Software Engineer" />
+        <meta
+            itemprop="description"
+            content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering."
+        />
+        <meta itemprop="image" content="https://zisiszikos.com/images/zisis_zikos.jpg" />
 
-    <meta itemprop="name" content="Zisis Zikos - Front-end Software Engineer">
-    <meta itemprop="description" content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering.">
-    <meta itemprop="image" content="https://zisiszikos.com/images/zisis_zikos.jpg">
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@zisiszikos" />
+        <meta name="twitter:title" content="Zisis Zikos - Front-end Software Engineer" />
+        <meta
+            name="twitter:description"
+            content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering."
+        />
+        <meta name="twitter:creator" content="@zisiszikos" />
+        <meta name="twitter:image:src" content="https://zisiszikos.com/images/zisis_zikos.jpg" />
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@zisiszikos">
-    <meta name="twitter:title" content="Zisis Zikos - Front-end Software Engineer">
-    <meta name="twitter:description" content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering.">
-    <meta name="twitter:creator" content="@zisiszikos">
-    <meta name="twitter:image:src" content="https://zisiszikos.com/images/zisis_zikos.jpg">
+        <meta property="og:title" content="Zisis Zikos - Front-end Software Engineer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://zisiszikos.com/" />
+        <meta property="og:image" content="https://zisiszikos.com/images/zisis_zikos.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="670" />
+        <meta property="og:image:height" content="670" />
+        <meta
+            property="og:description"
+            content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering."
+        />
+        <meta property="og:site_name" content="Zisis Zikos - Front-end Software Engineer" />
 
-    <meta property="og:title" content="Zisis Zikos - Front-end Software Engineer">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zisiszikos.com/">
-    <meta property="og:image" content="https://zisiszikos.com/images/zisis_zikos.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="670">
-    <meta property="og:image:height" content="670">
-    <meta property="og:description" content="Experienced Software Engineer with a demonstrated history of working in the computer software industry. Skilled in Node.js (Express.js), Javascript (Twitter Flight.js, React.js), HTML5 (Jade Lang), CSS3 (SASS). Strong engineering professional with a Bachelor's degree focused in Electronic Engineering.">
-    <meta property="og:site_name" content="Zisis Zikos - Front-end Software Engineer">
+        <link rel="apple-touch-icon" sizes="57x57" href="https://zisiszikos.com/images/apple/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="https://zisiszikos.com/images/apple/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="https://zisiszikos.com/images/apple/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://zisiszikos.com/images/apple/apple-icon-76x76.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="https://zisiszikos.com/images/apple/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="https://zisiszikos.com/images/apple/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="https://zisiszikos.com/images/apple/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="https://zisiszikos.com/images/apple/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://zisiszikos.com/images/apple/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="https://zisiszikos.com/images/android/android-icon-192x192.png"
+        />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://zisiszikos.com/images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="https://zisiszikos.com/images/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://zisiszikos.com/images/favicon-16x16.png" />
+        <link rel="manifest" href="https://zisiszikos.com/manifest.json" />
+        <link rel="canonical" href="https://zisiszikos.com" />
+        <meta name="msapplication-TileColor" content="#333333" />
+        <meta name="msapplication-TileImage" content="https://zisiszikos.com/images/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#333333" />
+        <link href="dist/styles.css" rel="stylesheet" media="none" onload="if(media!=='all')media='all'" />
+    </head>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="https://zisiszikos.com/images/apple/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://zisiszikos.com/images/apple/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://zisiszikos.com/images/apple/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://zisiszikos.com/images/apple/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="https://zisiszikos.com/images/apple/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="https://zisiszikos.com/images/apple/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="https://zisiszikos.com/images/apple/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="https://zisiszikos.com/images/apple/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://zisiszikos.com/images/apple/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://zisiszikos.com/images/android/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://zisiszikos.com/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://zisiszikos.com/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://zisiszikos.com/images/favicon-16x16.png">
-    <link rel="manifest" href="https://zisiszikos.com/manifest.json">
-    <link rel="canonical" href="https://zisiszikos.com" />
-    <meta name="msapplication-TileColor" content="#333333">
-    <meta name="msapplication-TileImage" content="https://zisiszikos.com/images/ms-icon-144x144.png">
-    <meta name="theme-color" content="#333333">
-    <link href="dist/styles.css" rel="stylesheet" media="none" onload="if(media!=='all')media='all'">
-</head>
-
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T3NJH24" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="main">
-        <div class="profile">
-            <div class="avatar"></div>
-            <div class="personal-details">
-                <h1 class="name">Zisis Zikos</h1>
-                <p class="details">
-                    Front-end Software Engineer
-                    <br/>
-                    <a class="emaillink" title="Email address" href="mailto:zisis@zisiszikos.com">
-                        <i class="fas fa-envelope emaillink"></i>
-                    </a>
-                    <a class="linkedinlink" title="Linkedin account" target="_blank" rel="noopener" href="https://www.linkedin.com/in/zisiszikos/">
-                        <i class="fab fa-linkedin linkedinlink"></i>
-                    </a>
-                    <a class="githublink" title="Github account" target="_blank" rel="noopener" href="https://github.com/zisiszikos">
-                        <i class="fab fa-github githublink"></i>
-                    </a>
-                    <a class="cvlink" title="CV" target="_blank" rel="noopener" href="https://drive.google.com/file/d/0BzJhtJqv9xDJQ1VPejNGbzRJOGc/view?usp=sharing&resourcekey=0-R6pyXlaBbC2aKw4veZtWEw">
-                        <i class="fas fa-address-card cvlink"></i>
-                    </a>
-                </p>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-T3NJH24"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="main">
+            <div class="profile">
+                <div class="avatar"></div>
+                <div class="personal-details">
+                    <h1 class="name">Zisis Zikos</h1>
+                    <p class="details">
+                        Front-end Software Engineer
+                        <br />
+                        <a class="emaillink" title="Email address" href="mailto:zisis@zisiszikos.com">
+                            <i class="fas fa-envelope emaillink"></i>
+                        </a>
+                        <a
+                            class="linkedinlink"
+                            title="Linkedin account"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.linkedin.com/in/zisiszikos/"
+                        >
+                            <i class="fab fa-linkedin linkedinlink"></i>
+                        </a>
+                        <a
+                            class="githublink"
+                            title="Github account"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://github.com/zisiszikos"
+                        >
+                            <i class="fab fa-github githublink"></i>
+                        </a>
+                        <a
+                            class="cvlink"
+                            title="CV"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://drive.google.com/file/d/0BzJhtJqv9xDJQ1VPejNGbzRJOGc/view?usp=sharing&resourcekey=0-R6pyXlaBbC2aKw4veZtWEw"
+                        >
+                            <i class="fas fa-address-card cvlink"></i>
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/service-worker-registration.js"></script>
-</body>
-
+        <script src="js/service-worker-registration.js"></script>
+    </body>
 </html>
