@@ -1,0 +1,27 @@
+{
+  "name": "zisiszikos-personal-website",
+  "version": "1.0.0",
+  "description": "Zisis Zikos' personal website",
+  "main": "js/service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zisiszikos/zisiszikos.github.io.git"
+  },
+  "keywords": [
+    "zisiszikos",
+    "website"
+  ],
+  "author": "Zisis Zikos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zisiszikos/zisiszikos.github.io/issues"
+  },
+  "homepage": "https://github.com/zisiszikos/zisiszikos.github.io#readme",
+  "engines": {
+    "node": "22.11.0",
+    "npm": "10.9.0"
+  }
+}
