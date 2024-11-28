@@ -23,6 +23,8 @@ jobs:
             - run: npm run build --if-present
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v2
+              with:
+                  path: /
 
     deploy:
         # Add a dependency to the build job
