@@ -71,7 +71,7 @@ var precacheConfig = [
     ['ms-icon-150x150.png', '75d0989202c0e3a19e9588944e98fe73'],
     ['ms-icon-310x310.png', '1a73e515b8fc0effdf281ae285c1a010'],
     ['ms-icon-70x70.png', 'df13ad52f9c29f5256d039e03e5a34e5'],
-    ['style.css', '2632262c9d68ccf0b69eb37b1a9005c7'],
+    ['css/style.css', '2632262c9d68ccf0b69eb37b1a9005c7'],
     ['webfonts/fa-brands-400.eot', 'ae37590ab05e9c625bcabf1759ab9dc2'],
     ['webfonts/fa-brands-400.svg', 'fb0cbe85f42e49383ac4764fd3211e66'],
     ['webfonts/fa-brands-400.ttf', 'c09b5960237e462582aa7b66411e57d5'],
