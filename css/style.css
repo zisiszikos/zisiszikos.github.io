@@ -100,7 +100,7 @@ h5 {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
 }
 
 @media (max-width: 560px) {
@@ -162,7 +162,6 @@ h5 {
     white-space: nowrap;
     color: white;
     margin: 0;
-    margin-bottom: 10px;
 }
 
 .details a {

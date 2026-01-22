@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
     <head>
-        <script src="js/service-worker-registration.js"></script>
+        <script defer src="js/service-worker-registration.js"></script>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preload" fetchpriority="high" as="image" href="/images/zisis_zikos_300.webp" type="image/webp" />
         <link rel="preload" href="/webfonts/Catamaran/Catamaran-ExtraBold.ttf" as="font" type="font/ttf" crossorigin />
@@ -272,7 +272,7 @@
         <link href="dist/styles.css" rel="stylesheet" media="none" onload="if(media!=='all')media='all'" />
     </head>
 
-    <body>
+    <body style="height: 100%; margin: 0; padding: 0;">
         <!-- Google Tag Manager (noscript) -->
         <noscript>
             <iframe
@@ -283,12 +283,12 @@
             ></iframe>
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class="main">
-            <div class="profile">
-                <div class="avatar"></div>
-                <div class="personal-details">
-                    <h1 class="name">Zisis Zikos</h1>
-                    <p class="details">
+        <main role="main" class="main" style="height: 100%; overflow: hidden;">
+            <div class="profile" style="display: flex; position: absolute;top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">
+                <div class="avatar" style="width: 150px; height: 150px;"></div>
+                <div class="personal-details" style="padding-left: 16px;">
+                    <h1 class="name" style="font-size: 42px; margin: 0;">Zisis Zikos</h1>
+                    <p class="details" style="font-size: 28px; margin: 0;">
                         Front-end Software Engineer
                         <br />
                         <a class="emaillink" title="Email address" href="mailto:zisis@zisiszikos.com">
@@ -315,6 +315,6 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
